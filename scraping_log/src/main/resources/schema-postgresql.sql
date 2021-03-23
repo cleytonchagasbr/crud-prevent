@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS log;
 
 create table log(
-	id_log Bigserial NOT null  constraint pk_id primary key,
+	id_log serial NOT null  constraint pk_id primary key,
 	data_log TIMESTAMP,
 	ip varchar(40),
 	request varchar(40),
