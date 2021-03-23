@@ -24,16 +24,19 @@ create table log(
 <strong>Foi utilizado o banco de dados default do Postgres</strong> </br>
 </br>
 Informações application.properties</b></br>
+
 ```
-<b>spring.datasource.url=jdbc:postgresql://localhost:5432/postgres </b></br>
-<b>spring.datasource.username=postgres </b></br>
-<b>spring.datasource.password=root </b></br>
-<b>spring.datasource.platform=postgresql</b></br>
+spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+spring.datasource.username=postgres
+spring.datasource.password=root
+spring.datasource.platform=postgresq
 ```
+
 </hr>
 
 ### Testes executados - Junit
 <p> Para os testes tentei cubrir todos os cenários de <b>sucesso</b> e o que era esperado de cada método.</p>
+
 ```
 testaConexaoComBancoDeDadosSucess
 testaFindLogByDateComSucesso
@@ -52,6 +55,7 @@ Já que não pude utilizar o JPA não vi sentido em usar o Hibernate, então uti
 </br>
 
 <h3>Dependências</h3>
+
 ```
 spring-boot-starter-jdbc
 spring-boot-starter-web
