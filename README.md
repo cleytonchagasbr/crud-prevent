@@ -18,8 +18,18 @@ Informações application.properties</b></br>
 <b>spring.datasource.platform=postgresql</b></br>
 
 </hr>
-<h1>Passo a passo para executar os testes - Junit</h1>
+<h1>Testes executados - Junit</h1>
 
+Para os testes tentei cubrir todos os cenários de <b>sucesso</b> e o que era esperado de cada método.
+<b>testaConexaoComBancoDeDadosSucesso</b></br>
+<b>testaFindLogByDateComSucesso</b></br>
+<b>testaInsertFileLogComSucesso</b></br>
+<b>testaInsertUmLogComSuccesso</b></br>
+<b>testaInsertLogEmLoteComSucesso</b></br>
+<b>testaGetAllLogsByIpComSucesso</b></br>
+<b>testaBuildLogModel</b></br>
+<b>testaDeleteLogComSucesso</b></br>
+<b>buildError</b></br>
 
 </hr>
 <h2>Dependência e ferramentas utilizadas</h2>
