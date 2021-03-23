@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "d3f97458-c750-4e78-a9d3-8f0796701c33",
+		"name": "New Prevent Senior",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buscas",
+			"item": [
+				{
+					"name": "getAllLogsByIp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/getAllLogsByIp?ip=192.168.127.83",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getAllLogsByIp"
+							],
+							"query": [
+								{
+									"key": "ip",
+									"value": "192.168.127.83"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchByDate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dataInicial\": \"2020-01-01 00:00:00\",\r\n    \"dataFinal\": \"2020-01-01 00:00:60\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/searchByDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"searchByDate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inserts",
+			"item": [
+				{
+					"name": "insertLog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data_log\": \"2020-01-01 00:01:07.036\",\r\n    \"ip\": \"192.168.234.82\",\r\n    \"request\": \"GET / HTTP/1.1\",\r\n    \"status\": \"200\",\r\n    \"user_agent\": \"swcd (unknown version) CFNetwork/808.2.16 Darwin/15.6.0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/insertLog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"insertLog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insertLogsInBatch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"data\": \"2020-01-01 00:00:11.763\",\r\n        \"ip\": \"192.168.234.82\",\r\n        \"request\": \"GET / HTTP/1.1\",\r\n        \"status\": \"200\",\r\n        \"user_agent\": \"swcd (unknown version) CFNetwork/808.2.16 Darwin/15.6.0\"\r\n        },\r\n    {\r\n        \"data\": \"2020-01-01 00:00:21.164\",\r\n        \"ip\": \"192.168.234.82\",\r\n        \"request\": \"GET / HTTP/1.1\",\r\n        \"status\": \"200\",\r\n        \"user_agent\": \"swcd (unknown version) CFNetwork/808.2.16 Darwin/15.6.0\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/insertLogsInBatch",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"insertLogsInBatch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insertFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pathFile\": \"C:/access.log\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/insertFileLog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"insertFileLog"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "deleteOneLogWhyID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/deleteLog?index=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteLog"
+					],
+					"query": [
+						{
+							"key": "index",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
