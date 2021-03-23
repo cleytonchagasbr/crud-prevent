@@ -1,7 +1,6 @@
 <h1>Passo a passo para rodar o projeto</h1>
 
-<h2>Swagger</h2>
-<h3>:http://localhost:8080/swagger-ui.html#/</h3>
+<h2>Swagger Documentação - http://localhost:8080/swagger-ui.html#/</h2>
 
 <h2> Primeiro - Criação de tabela de log e inserção de logs por api rest.</h2>
 1 - Crie a tabela de logs no banco de dados postgres default. Use o arquivo "querys.sql" dentro dele encontra-se todas as chamadas utilizadas. </br>
