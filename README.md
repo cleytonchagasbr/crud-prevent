@@ -35,15 +35,15 @@ Informações application.properties</b></br>
 ### Testes executados - Junit
 <p> Para os testes tentei cubrir todos os cenários de <b>sucesso</b> e o que era esperado de cada método.</p>
 ```
-<b>testaConexaoComBancoDeDadosSucesso</b></br>
-<b>testaFindLogByDateComSucesso</b></br>
-<b>testaInsertFileLogComSucesso</b></br>
-<b>testaInsertUmLogComSuccesso</b></br>
-<b>testaInsertLogEmLoteComSucesso</b></br>
-<b>testaGetAllLogsByIpComSucesso</b></br>
-<b>testaBuildLogModel</b></br>
-<b>testaDeleteLogComSucesso</b></br>
-<b>buildError</b></br>
+testaConexaoComBancoDeDadosSucess
+testaFindLogByDateComSucesso
+testaInsertFileLogComSucesso
+testaInsertUmLogComSuccesso
+testaInsertLogEmLoteComSucesso
+testaGetAllLogsByIpComSucesso
+testaBuildLogModel
+testaDeleteLogComSucesso
+buildError
 ```
 </hr>
 
@@ -53,15 +53,15 @@ Já que não pude utilizar o JPA não vi sentido em usar o Hibernate, então uti
 
 <h3>Dependências</h3>
 ```
-spring-boot-starter-jdbc </br>
-spring-boot-starter-web </br>
-lombok </br>
-postgresql </br>
-springfox-swagger-ui </br>
+spring-boot-starter-jdbc
+spring-boot-starter-web
+lombok
+postgresql
+springfox-swagger-ui
 spring-boot-starter-test
 ```
 
-<h3 align="center">cleyton-chagas@hotmail.com</h3>
+<h3 align="center">contato - cleyton-chagas@hotmail.com</h3>
 
 
 
