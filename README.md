@@ -1,6 +1,6 @@
 <h1>Passo a passo para rodar o projeto</h1>
 
-<h2>Swagger Documentação - http://localhost:8080/swagger-ui.html#/</h2>
+### Swagger Documentação - http://localhost:8080/swagger-ui.html#/
 
 ### Pré-requisitos
 1 - Crie a tabela de logs com o comando abaixo no banco de dados postgres default. Se preferir use o arquivo "querys.sql" dentro dele encontra-se todas as chamadas utilizadas. </br>
